@@ -1,0 +1,75 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conurbano Distribución</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+  <div class="contenedor">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><img src="media/conurbano.jpg" alt="index"></a>
+      </div>
+
+      <nav class="barra">
+        <a href="index.html">Inicio</a>
+        <a href="pages/nuestras_marcas.html">Nuestras marcas</a>
+        <a href="pages/contacto.html">Contacto</a>
+      </nav>
+    </header>
+  <main class="mainC">
+      <div class="formulario">
+        <div class="tituloC"><h3>Formulario</h3></div>
+        <form action="recibe.html" method="POST" enctype="multipart/form-data">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" value="" >
+            <input type="email" name="email" placeholder="Ingresa tu email" >
+            <p>Ingresa tu mensaje:</p>
+            <textarea></textarea>
+            <br>
+            <label>¿Ya sos cliente?: Si </label>
+            <input type="radio" name="cliente" value="Si" >
+            <label>No</label>
+            <input type="radio" name="cliente" value="No" >
+            <p>Tipo de comercio:</p>
+            <label>Kiosco</label>
+            <input type="checkbox" name="comercio" value="Kiosco" >
+            <label>Almacen</label>
+            <input type="checkbox" name="comercio" value="Almacen" >
+            <label>Autoservicio</label>
+            <input type="checkbox" name="comercio" value="Autoservicio" >
+            <label>Mayorista</label>
+            <input type="checkbox" name="comercio" value="Mayorista" >      
+            <p>¿Donde esta ubicado el comercio?</p>
+            <select>
+              <option>Zona Norte</option>
+              <option>Zona Oeste</option>
+              <option>Zona Sur</option>
+            </select>
+            <br>
+            <input type="submit" name="sube_form" value="Enviar">
+            <input type="reset" name="resetear" value="Borrar todo">
+            </form>
+      </div>
+    </div>
+    <div class="lateralC">
+      <h3>Ubicación</h3>
+      <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.148843300516!2d-58.711250584774554!3d-34.44836938050009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca23ed2232329%3A0x988c28ea54956a7e!2sOtto%20Krause%204760%2C%20Area%20de%20Promoci%C3%B3n%20El%20Tri%C3%A1ngulo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1623251804019!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    <footer class="footer">
+      <div class="derechos">
+      <p>Copyright 2011 - 2021 Conurbano Distribución S.A</p>
+      </div>
+
+      <div class="icono">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
