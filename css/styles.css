@@ -121,7 +121,7 @@ p { margin: 15px; }
   .lateralC { flex-direction: column; width: 100%; }
   .mainC { flex-direction: column; margin-top: 160px; width: 100%; }
   .tituloM { flex-direction: column; margin-top: 170px; width: 100%; }
-  .galeria .imagenes { flex: 100%; }
+  .galeria .imagenes { flex: 50%; }
   .video iframe { width: 200px; }
   .icono { clear: both; min-width: 220px; margin: auto; }
   .mapa iframe { width: 200px; height: 100px; } }
