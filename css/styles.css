@@ -118,6 +118,7 @@ p { margin: 15px; }
   .lateral { flex-direction: column; width: 100%; }
   .lateralS { flex-direction: column; margin-top: 160px; width: 100%; }
   .articuloSu { flex-direction: column; margin-top: 170px; width: 100%; }
+  .lateralC { flex-direction: column; width: 100%; }
   .mainC { flex-direction: column; margin-top: 160px; width: 100%; }
   .tituloM { flex-direction: column; margin-top: 170px; width: 100%; }
   .galeria .imagenes { flex: 100%; }
