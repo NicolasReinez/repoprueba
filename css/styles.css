@@ -29,7 +29,7 @@ p { margin: 15px; }
 
 .lateral h3 { background-color: #fff; color: black; padding: 5px; }
 
-.lateral .imagen img { height: 150px; margin: 10px; }
+.imagen img { height: 150px; margin: 10px; }
 
 .footer { background: red; width: 100%; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; }
 
@@ -114,12 +114,14 @@ p { margin: 15px; }
   .header { flex-direction: column; padding: 0; }
   .header .logo { margin: 5px 0; }
   .header .barra { width: 100%; }
-  .main { flex-direction: column; margin-top: 50px; }
-  .lateralS { flex-direction: column; margin-top: 160px; }
-  .articuloSu { flex-direction: column; margin-top: 170px; }
-  .mainC { flex-direction: column; margin-top: 160px; }
-  .tituloM { flex-direction: column; margin-top: 170px; }
+  .main { flex-direction: column; margin-top: 50px; width: 100%; }
+  .lateral { flex-direction: column; width: 100%; }
+  .lateralS { flex-direction: column; margin-top: 160px; width: 100%; }
+  .articuloSu { flex-direction: column; margin-top: 170px; width: 100%; }
+  .mainC { flex-direction: column; margin-top: 160px; width: 100%; }
+  .tituloM { flex-direction: column; margin-top: 170px; width: 100%; }
   .galeria .imagenes { flex: 100%; }
-  .video iframe { width: 350px; }
+  .video iframe { width: 150px; }
+  .imagen img { height: 150px; }
   .icono { clear: both; min-width: 220px; margin: auto; }
-  .mapa iframe { width: 300px; } }
+  .mapa iframe { width: 150px; height: 100px; } }

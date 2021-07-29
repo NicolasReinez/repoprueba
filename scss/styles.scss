@@ -119,7 +119,7 @@ p {
   padding: 5px;
 }
 
-.lateral .imagen img {
+.imagen img {
   height:150px;
   margin:10px;
 }
@@ -452,27 +452,37 @@ p {
 .main{
     flex-direction:column;
     margin-top: 50px;
+    width: 100%;
+}
+
+.lateral{
+    flex-direction:column;
+    width: 100%;
 }
 
 .lateralS {
     flex-direction:column;
     margin-top: 160px;
+    width: 100%;
   }
 
 .articuloSu{
     flex-direction:column;
     margin-top: 170px;
+    width: 100%;
 }
 
 
 .mainC{
     flex-direction:column;
     margin-top: 160px;
+    width: 100%;
 }
 
 .tituloM{
     flex-direction:column;
     margin-top: 170px;
+    width: 100%;
 }
 
 .galeria .imagenes {
@@ -480,7 +490,11 @@ p {
 }
 
 .video iframe{
-  width: 350px;
+  width: 150px;
+}
+
+.imagen img {
+  height:150px;
 }
 
 .icono {
@@ -490,6 +504,7 @@ p {
 }
 
 .mapa iframe{
-  width: 300px;
+  width: 150px;
+  height: 100px;
 }
 }
