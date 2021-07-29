@@ -1,352 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
-/* line 2, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
+* { padding: 0px; margin: 0px; box-sizing: border-box; }
 
-/* line 8, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-body {
-  background: #005ca7;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  min-height: 100%;
-  text-align: center;
-}
+body { background: #e9e9e9; font-family: 'Roboto', sans-serif; font-size: 1.2rem; min-height: 100%; text-align: center; }
 
-/* line 16, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.contenedor {
-  background: white;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+.contenedor { background: #fff; width: 90%; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; }
 
-/* line 26, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-body {
-  background: #e9e9e9;
-}
+.header { background: #fff; width: 90%; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-direction: row; flex-wrap: wrap; position: fixed; z-index: 1; }
 
-/* line 30, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header {
-  background: #fff;
-  width: 90%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  position: fixed;
-  z-index: 1;
-}
+.header .logo { color: #fff; }
 
-/* line 44, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header .logo {
-  color: #fff;
-}
+.header .logo img { width: 200px; }
 
-/* line 48, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header .logo img {
-  width: 200px;
-}
+.header .barra { width: 60%; display: flex; flex-wrap: wrap; align-items: center; }
 
-/* line 52, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header .barra {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+.header .barra a { background: red; color: #fff; text-align: center; text-decoration: none; padding: 10px; flex-grow: 1; }
 
-/* line 60, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header .barra a {
-  background: red;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  flex-grow: 1;
-}
+.header .barra a:hover { background: darkred; }
 
-/* line 70, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.header .barra a:hover {
-  background: darkred;
-}
+.main { background: #fff; padding: 20px; flex: 1 1 65%; }
 
-/* line 74, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.main {
-  background: #fff;
-  padding: 20px;
-  flex: 1 1 65%;
-}
+.main .articulo { color: black; border: solid 1px #005ca7; margin-bottom: 10px; padding-bottom: 10px; margin-top: 110px; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: center; line-height: 30px; }
 
-/* line 81, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.main .articulo {
-  background-color: white;
-  color: black;
-  margin-top: 110px;
-  border: solid 1px #005ca7;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+p { margin: 15px; }
 
-/* line 96, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.articulo .titulo {
-  background-color: #005ca7;
-  color: white;
-  font-size: 1.5rem;
-}
+.articulo .titulo { background-color: #005ca7; color: #fff; font-size: 1.5rem; }
 
-/* line 103, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.boton {
-  height: 50px;
-  padding: 15px;
-  background-color: red;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 10px;
-}
+.lateral { background: #005ca7; padding: 20px; flex: 1 1 35%; margin-top: 100px; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-start; }
 
-/* line 113, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.botonDerecha {
-  position: absolute;
-  right: 20px;
-  bottom: -30px;
-}
+.lateral h3 { background-color: #fff; color: black; padding: 5px; }
 
-/* line 119, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.articulo a:hover {
-  background: darkred;
-}
+.lateral .imagen img { height: 150px; margin: 10px; }
 
-/* line 123, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateral {
-  background: #005ca7;
-  padding: 20px;
-  flex: 1 1 35%;
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+.footer { background: red; width: 100%; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; }
 
-/* line 135, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateral h3 {
-  background-color: white;
-  color: black;
-  padding: 5px;
-}
+.footer .derechos p { flex-grow: 1; color: #fff; padding: 10px; text-align: center; text-decoration: none; }
 
-/* line 141, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateral .imagen img {
-  height: 150px;
-  margin: 10px;
-}
+.footer .icono { display: flex; flex-direction: row; align-items: center; }
 
-/* line 147, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.footer {
-  background: red;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* line 158, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.footer .derechos p {
-  flex-grow: 1;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* line 167, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.footer .icono {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* line 173, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.footer .icono i {
-  font-size: 30px;
-  color: white;
-  margin-left: 40px;
-}
+.footer .icono i { font-size: 30px; color: white; margin-left: 40px; }
 
 /*CONTACTO*/
-/* line 183, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.mainC {
-  background: #fff;
-  margin-top: 110px;
-  padding: 20px;
-  flex: 1 1 65%;
-}
+.mainC { background: #fff; margin-top: 100px; padding: 10px; flex: 1 1 60%; }
 
-/* line 191, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.mainC .formulario {
-  background-color: white;
-  color: black;
-  border: solid 1px #005ca7;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+.formulario { color: black; border: solid 1px #005ca7; margin-bottom: 10px; padding-bottom: 10px; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: center; line-height: 30px; height: 100%; }
 
-/* line 204, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.formulario .tituloC {
-  background-color: #005ca7;
-  color: white;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  padding: 10px;
-}
+.formulario .tituloC { width: 100%; background-color: #005ca7; color: #fff; font-size: 1.5rem; }
 
-/* line 212, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateralC {
-  background: #005ca7;
-  padding: 20px;
-  flex: 1 1 35%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-}
+.lateralC { background: #005ca7; color: #fff; flex: 1 1 40%; margin-top: 100px; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-start; height: 100%; }
 
-/* line 223, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateralC h3 {
-  background-color: white;
-  color: black;
-  padding: 5px;
-}
+.lateralC h2 { background-color: #fff; color: black; padding: 5px; }
 
-/* line 229, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.lateralC .mapa iframe {
-  height: 150px;
-  margin: 10px;
-}
+.lateralC .mapa iframe { height: 150px; margin: 5px; }
 
 /*MARCAS*/
-/* line 236, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.tituloM {
-  width: 100%;
-  background-color: #005ca7;
-  color: white;
-  font-size: 1.5rem;
-  padding: 10px;
-  margin-top: 110px;
-}
+.tituloM { width: 100%; background-color: #005ca7; color: #fff; font-size: 1.5rem; padding: 10px; margin-top: 110px; }
 
-/* line 245, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.galeria {
-  width: 100%;
-}
+.tituloMa { background-color: #005ca7; color: #fff; font-size: 1.5rem; padding: 10px; }
 
-/* line 249, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.galeria .imagenes {
-  margin: 40px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
+.galeria { width: 100%; }
 
-/* line 259, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.galeria .imagenes img {
-  width: 100px;
-}
+.galeria .imagenes { margin: 40px 0px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around; align-items: center; align-content: center; }
 
-/* line 263, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.video {
-  padding: 20px;
-  flex: 1 1 65%;
-}
+.galeria .imagenes img { width: 100px; }
 
-/* line 268, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.video .titulo {
-  width: 100%;
-  background-color: #005ca7;
-  color: white;
-  font-size: 1.5rem;
-}
+.video { padding: 20px; flex: 1 1 65%; }
 
-/* line 275, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-.video iframe {
-  margin-top: 15px;
-}
+.video .titulo { width: 100%; background-color: #005ca7; color: #fff; font-size: 1.5rem; }
 
-@media screen and (max-width: 800px) {
-  /* line 281, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .contenedor {
-    flex-direction: column;
-  }
-  /* line 285, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .header {
-    flex-direction: column;
-    padding: 0;
-  }
-  /* line 290, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .header .logo {
-    margin: 5px 0;
-  }
-  /* line 294, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .header .barra {
-    width: 100%;
-  }
-  /* line 298, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .lateral {
-    flex-direction: column;
-    flex: 0;
-    margin-top: 0px;
-  }
-  /* line 303, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .galeria .imagenes {
-    flex: 50%;
-  }
-}
+.video iframe { margin-top: 15px; }
 
-@media screen and (max-width: 600px) {
-  /* line 312, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .lateral {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  /* line 317, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .botonDerecha {
-    position: absolute;
-    right: 20px;
-    bottom: -40px;
-  }
-  /* line 323, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .galeria .imagenes {
-    flex: 100%;
-  }
-  /* line 327, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .video iframe {
-    width: 350px;
-  }
-  /* line 331, ../../../Pictures/Coderhouse/clase15+reinez/scss/styles.scss */
-  .footer i {
-    align-items: center;
-  }
-}
+/*SUMATE*/
+.articuloSu { color: black; border: solid 1px #005ca7; margin-bottom: 10px; padding-bottom: 10px; margin-top: 120px; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: center; line-height: 30px; }
 
-/*# sourceMappingURL=styles.css.map */
+p { margin: 15px; }
+
+.seccionSu .tituloSu { background-color: #005ca7; color: #fff; font-size: 1.5rem; }
+
+.seccionSu { color: black; border: solid 1px #005ca7; margin-bottom: 10px; padding-bottom: 10px; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: center; line-height: 30px; }
+
+p { margin: 15px; }
+
+.articuloSu .tituloSu { background-color: #005ca7; color: #fff; font-size: 1.5rem; }
+
+/*SERVICIOS*/
+.mainS { background: #fff; padding: 20px; flex: 1 1 65%; }
+
+.mainS .articuloS { color: black; border: solid 1px #005ca7; margin-bottom: 10px; padding-bottom: 10px; margin-top: 110px; flex-wrap: wrap; flex-direction: row; align-items: center; justify-content: center; line-height: 30px; }
+
+p { margin: 15px; }
+
+.articuloS .tituloS { background-color: #005ca7; color: #fff; font-size: 1.5rem; }
+
+.lateralS { background: #005ca7; padding: 20px; flex: 1 1 35%; margin-top: 100px; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: flex-start; }
+
+.lateralS h3 { background-color: #fff; color: black; padding: 5px; }
+
+.lateralS .imagen img { height: 150px; margin: 10px; }
+
+@media screen and (max-width: 800px) { .contenedor { flex-direction: column; }
+  .header { flex-direction: column; padding: 0; }
+  .header .logo { margin: 5px 0; }
+  .header .barra { width: 100%; }
+  .lateral { flex-direction: column; flex: 0; margin-top: 0px; }
+  .lateralS { flex-direction: column; margin-top: 120px; }
+  .articuloSu { flex-direction: column; margin-top: 120px; }
+  .mainC { flex-direction: column; margin-top: 110px; }
+  .tituloM { flex-direction: column; margin-top: 120px; }
+  .derechos { clear: both; min-width: 220px; margin: auto; }
+  .icono { clear: both; min-width: 220px; margin: auto; }
+  .galeria .imagenes { flex: 50%; } }
+
+@media screen and (max-width: 600px) { .contenedor { flex-direction: column; }
+  .header { flex-direction: column; padding: 0; }
+  .header .logo { margin: 5px 0; }
+  .header .barra { width: 100%; }
+  .main { flex-direction: column; margin-top: 50px; }
+  .lateralS { flex-direction: column; margin-top: 160px; }
+  .articuloSu { flex-direction: column; margin-top: 170px; }
+  .mainC { flex-direction: column; margin-top: 160px; }
+  .tituloM { flex-direction: column; margin-top: 170px; }
+  .galeria .imagenes { flex: 100%; }
+  .video iframe { width: 350px; }
+  .icono { clear: both; min-width: 220px; margin: auto; }
+  .mapa iframe { width: 300px; } }
