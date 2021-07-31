@@ -114,7 +114,7 @@ p { margin: 15px; }
   .header { flex-direction: column; padding: 0; }
   .header .logo { margin: 5px 0; }
   .header .barra { width: 100%; }
-  .main { flex-direction: column; margin-top: 50px; width: 100%; }
+  .main { flex-direction: column; margin-top: 70px; width: 100%; }
   .lateral { flex-direction: column; width: 100%; }
   .lateralS { flex-direction: column; margin-top: 160px; width: 100%; }
   .articuloSu { flex-direction: column; margin-top: 170px; width: 100%; }
